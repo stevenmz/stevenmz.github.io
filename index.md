@@ -2,6 +2,8 @@
 layout: default
 title: Main
 ---
+<!--
+This section is now redundant with the menu in the sidebar
 
 #Portfolio Contents
 1. [Open Source Contributions]({{page.url}}#OpenSource)
@@ -9,7 +11,7 @@ title: Main
 3. [Data Science Projects]({{page.url}}#DataScienceProjects)
 4. [Desktop Application Projects]({{page.url}}#DesktopAppProjects)
 5. [Android Application Projects]({{page.url}}#AndroidAppProjects)
-
+-->
 
 ##<a name="OpenSource"></a> Open Source Contributions
 * Issues Reported
