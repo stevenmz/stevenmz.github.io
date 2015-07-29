@@ -3,15 +3,23 @@ layout: default
 title: Main
 ---
 
-<h2>
-<a name="Presentations"></a>Presentations
-</h2>
-<h3>Random Forest Use in Predicting Cancer</h3>
-<p>   
-<b>Download: </b><a href="non-images/MAGANA-ZOOK_Random ForestsAndTheirApplicationToCancerPrediction.pdf">Presentation</a> 
-<br />     
-<b>Overview: </b>This presentation introduces viewers to what random forests are, how machine learning has played a historic role in the medical field, and how random forests are becoming the preferred solution for classifying samples as cancerous or benign over black-box techniques like neural networks.
-</p>  
+## Open Source Contributions
+* Issues Reported
+  * [Storm-457: Unable to kill topologies whose name has spaces](https://issues.apache.org/jira/browse/STORM-457) 
+  * [Storm-456: Unable to kill topologies whose name has spaces](https://issues.apache.org/jira/browse/STORM-456)
+* Patches Submitted
+  * [PIG-4636: Occurred spelled incorrectly in error message for Launcher and POMergeCogroup](https://issues.apache.org/jira/browse/PIG-4636)
+
+## <a name="Presentations"></a>Presentations
+
+### Random Forest Use in Predicting Cancer
+
+
+**Download: ** [Presentation](non-images/MAGANA-ZOOK_Random ForestsAndTheirApplicationToCancerPrediction.pdf)</a> 
+
+    
+**Overview: **This presentation introduces viewers to what random forests are, how machine learning has played a historic role in the medical field, and how random forests are becoming the preferred solution for classifying samples as cancerous or benign over black-box techniques like neural networks.
+ 
 
 <h2>
 <a name="DataScienceProjects"></a>Data Science Projects
