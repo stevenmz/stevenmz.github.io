@@ -3,8 +3,6 @@ layout: default
 title: Main
 ---
 
-markdown version
-
 <h2>
 <a name="Presentations"></a>Presentations
 </h2>
