@@ -13,12 +13,9 @@ title: Main
 ## <a name="Presentations"></a>Presentations
 
 ### Random Forest Use in Predicting Cancer
-
-
-**Download: ** [Presentation](non-images/MAGANA-ZOOK_Random ForestsAndTheirApplicationToCancerPrediction.pdf)</a> 
-
+** Download: ** [Presentation](non-images/MAGANA-ZOOK_Random ForestsAndTheirApplicationToCancerPrediction.pdf) 
     
-**Overview: **This presentation introduces viewers to what random forests are, how machine learning has played a historic role in the medical field, and how random forests are becoming the preferred solution for classifying samples as cancerous or benign over black-box techniques like neural networks.
+** Overview: ** This presentation introduces viewers to what random forests are, how machine learning has played a historic role in the medical field, and how random forests are becoming the preferred solution for classifying samples as cancerous or benign over black-box techniques like neural networks.
  
 
 <h2>
