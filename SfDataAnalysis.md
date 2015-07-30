@@ -4,7 +4,7 @@ title: SF Crime Data Analysis
 ---
 # San Francisco Crime Data (Kaggle Competition)
 
-*** **Work in Progress** ***
+- - - **Work in Progress** - - -
 
 ## Summary and Objectives
 
@@ -65,9 +65,10 @@ If I want to see crime by street, address feature makes that difficult. What wou
 so lets extract the street name using regular expressions:
 
 ```splus
-street = sub("(.+ of )(.+)","\\2",data$Address)
 
+street = sub("(.+ of )(.+)","\\2",data$Address)
 street = sub("(.+)( / .+)","\\1", street)
+
 ```
 
 Which gives us our new feature of only street names:
