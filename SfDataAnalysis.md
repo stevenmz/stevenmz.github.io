@@ -14,6 +14,7 @@ title: SF Crime Data Analysis
 Lets load the training data Kaggle provided:
 
 ```splus
+
 data = read.csv('Kaggle/San Francisco Crime Classification/train.csv')
 ```
 
@@ -22,6 +23,7 @@ data = read.csv('Kaggle/San Francisco Crime Classification/train.csv')
 R Brought in the days of the week as a Factor, but days have an implied order (and its not alphabetical as R sets it) so lets make it ordinal: 
 
 ```splus
+
 data$DayOfWeek = ordered(data$DayOfWeek, levels=c('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'))
 ```
    
@@ -34,6 +36,7 @@ Looks like no similar categories
 We can do the same thing fro description, but to make it easier to spot similar typos we can also sort alphabetically:
 
 ```splus
+
 sort(unique(data$Descript))
 ```
 
