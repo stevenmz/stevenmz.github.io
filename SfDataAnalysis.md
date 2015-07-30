@@ -13,7 +13,7 @@ title: SF Crime Data Analysis
 ## Data Ingestion
 Lets load the training data Kaggle provided:
 
-```r
+```splus
 data = read.csv('Kaggle/San Francisco Crime Classification/train.csv')
 ```
 
@@ -21,7 +21,7 @@ data = read.csv('Kaggle/San Francisco Crime Classification/train.csv')
 
 R Brought in the days of the week as a Factor, but days have an implied order (and its not alphabetical as R sets it) so lets make it ordinal: 
 
-```r
+```splus
 data$DayOfWeek = ordered(data$DayOfWeek, levels=c('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'))
 ```
    
@@ -33,7 +33,7 @@ Looks like no similar categories
 
 We can do the same thing fro description, but to make it easier to spot similar typos we can also sort alphabetically:
 
-```r
+```splus
 sort(unique(data$Descript))
 ```
 
@@ -48,24 +48,27 @@ If I want to see crime by street, address feature makes that difficult. What wou
 
  
 so lets extract the street name using regular expressions:
-1.	```street = sub("(.+ of )(.+)","\\2",data$Address)```
-2.	```street = sub("(.+)( / .+)","\\1", street)``` 
+
+```splus
+street = sub("(.+ of )(.+)","\\2",data$Address)
+street = sub("(.+)( / .+)","\\1", street)
+```
 
 Which gives us our new feature of only street names:
  
-3.	Add this feature to our Data Frame: 
+Add this feature to our Data Frame: 
 
-```r
+```splus
 data$StreetName = as.factor(street)
 ```
 
-see https://stat.ethz.ch/R-manual/R-devel/library/base/html/grep.html  and https://stat.ethz.ch/R-manual/R-devel/library/base/html/regex.html  for more info on R and regular expressions.
+See [R Documentation - Pattern Matching and Replacement](https://stat.ethz.ch/R-manual/R-devel/library/base/html/grep.html)  and [R Documentation - Regular Expressions as used in R](https://stat.ethz.ch/R-manual/R-devel/library/base/html/regex.html)  for more info on R and regular expressions.
 
 Make sure the coordinates do not have missing values:
-1.	```which(is.na(data$X))```
-  * ```integer(0)```
+1. ```which(is.na(data$X))```
+  1. ```integer(0)```
 2.	```which(is.na(data$Y))```
-  * ```integer(0)```
+  1. ```integer(0)```
 
 
 ## Modeling and Exploratory Analysis
