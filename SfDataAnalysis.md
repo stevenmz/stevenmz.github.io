@@ -83,6 +83,7 @@ data$StreetName = as.factor(street)
 See [R Documentation - Pattern Matching and Replacement](https://stat.ethz.ch/R-manual/R-devel/library/base/html/grep.html)  and [R Documentation - Regular Expressions as used in R](https://stat.ethz.ch/R-manual/R-devel/library/base/html/regex.html)  for more info on R and regular expressions.
 
 Make sure the coordinates do not have missing values:
+
 1. ```which(is.na(data$X))```
   1. ```integer(0)```
 2.	```which(is.na(data$Y))```
