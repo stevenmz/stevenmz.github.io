@@ -31,7 +31,15 @@ This section is now redundant with the menu in the sidebar
 
 ##<a name="DataScienceProjects"></a>Data Science Projects
 
-### Project Ideas
+### San Francisco Crime Data Analysis
+
+**Technologies Used:** R
+
+**Project Writeup:** [Report](SfDataAnalysis.html)
+
+**Overview:** Using a dataset from a Kaggle competition, practice of the data science process was conducted in the R language to include: data acquisition, ingestion, preparation, exploratory analysis, and model building.
+
+### Other Project Ideas
 
 * R
 * Python (matplotlib, scikit-learn, etc.)
