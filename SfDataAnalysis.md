@@ -66,6 +66,7 @@ so lets extract the street name using regular expressions:
 
 ```splus
 street = sub("(.+ of )(.+)","\\2",data$Address)
+
 street = sub("(.+)( / .+)","\\1", street)
 ```
 
