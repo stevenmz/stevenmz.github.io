@@ -1,3 +1,7 @@
+---
+layout: default
+title: SF Crime Data Analysis
+---
 # San Francisco Crime Data (Kaggle Competition)
 
 **Work in Progress**
