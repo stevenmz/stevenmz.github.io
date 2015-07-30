@@ -4,7 +4,7 @@ title: SF Crime Data Analysis
 ---
 # San Francisco Crime Data (Kaggle Competition)
 
-- - - **Work in Progress** - - -
+**Note: This is a Work in Progress** 
 
 ## Summary and Objectives
 
@@ -13,7 +13,7 @@ title: SF Crime Data Analysis
 ## Data Ingestion
 Lets load the training data Kaggle provided:
 
-```Rscript
+```R
 data = read.csv('Kaggle/San Francisco Crime Classification/train.csv')
 ```
 
@@ -23,7 +23,7 @@ R Brought in the days of the week as a Factor, but days have an implied order (a
 
 ![View of R Environment showing the days column as a Factor not ordinal.](images/SfDataAnalysis/DataPrep1.png)
 
-```Rscript
+```R
 data$DayOfWeek = ordered(data$DayOfWeek, levels=c('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'))
 ```
 
@@ -42,7 +42,7 @@ Looks like no similar categories
 
 We can do the same thing fro description, but to make it easier to spot similar typos we can also sort alphabetically:
 
-```Rscript
+```R
 sort(unique(data$Descript))
 ```
 
@@ -64,11 +64,9 @@ If I want to see crime by street, address feature makes that difficult. What wou
  
 so lets extract the street name using regular expressions:
 
-```splus
-
+```R
 street = sub("(.+ of )(.+)","\\2",data$Address)
 street = sub("(.+)( / .+)","\\1", street)
-
 ```
 
 Which gives us our new feature of only street names:
@@ -78,7 +76,7 @@ Which gives us our new feature of only street names:
  
 Add this feature to our Data Frame: 
 
-```splus
+```R
 data$StreetName = as.factor(street)
 ```
 
