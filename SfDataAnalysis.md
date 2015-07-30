@@ -84,10 +84,8 @@ See [R Documentation - Pattern Matching and Replacement](https://stat.ethz.ch/R-
 
 Make sure the coordinates do not have missing values:
 
-1. ```which(is.na(data$X))```
-  1. ```integer(0)```
-2.	```which(is.na(data$Y))```
-  1. ```integer(0)```
+1. ```which(is.na(data$X))``` Result: ```integer(0)```
+2. ```which(is.na(data$Y))``` Result: ```integer(0)```
 
 
 ## Modeling and Exploratory Analysis
