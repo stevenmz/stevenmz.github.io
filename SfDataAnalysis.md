@@ -124,4 +124,11 @@ Make sure the coordinates do not have missing values:
 
 ## Building a Crime Classification Model
 
+### Random Forest Model
+The Random Forest algorithm builds an ensemble of weak learners (Decision trees that do not classify well), who all vote on the correct classification for a new instance. This ensemble technique has many advantages over a single decision tree including:
+
+* Advantage 1
+* Advantage 2
+
+We will use the R package [randomForest](https://cran.r-project.org/web/packages/randomForest/randomForest.pdf) to build and validate our crime classification model.
 ## Conclusion
