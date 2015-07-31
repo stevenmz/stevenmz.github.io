@@ -16,7 +16,9 @@ On June 2, 2015 a Kaggle competition titled "San Francisco Crime Classification"
 
 > From Sunset to SOMA, and Marina to Excelsior, this competition's dataset provides nearly 12 years of crime reports from across all of San Francisco's neighborhoods. Given time and location, you must predict the category of crime that occurred.
 
-This competition was interesting to me not just because of my proximity to San Francisco, or because I have had close friends victimized in the city, but also because it was an opportunity to use data science for the public good. Can we do analysis on this data that reveals trends in crime that were previously unknown? 
+This competition was interesting to me not just because of my proximity to San Francisco, or because I have had close friends victimized in the city, but also because it was an opportunity to use data science for the public good. 
+
+Can we do analysis on this data that reveals trends in crime that were previously unknown? 
 
 ## Data Acquisition
 
