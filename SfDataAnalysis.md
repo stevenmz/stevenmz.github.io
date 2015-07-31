@@ -35,6 +35,10 @@ data = read.csv('Kaggle/San Francisco Crime Classification/train.csv')
 
 This read.csv function automatically handles special cases found in this dataset such as a comma as part of a variable's contents not intended as a value separator.
 
+We can get a first-look at the values in the dataset by using the R head function,```R head(data) ```:
+
+![The first 6 observations from the dataset are shown](images/SfDataAnalysis/DataIngest1.png)
+
 ## Data Preparation
 
 ### Factor vs Ordinal
@@ -80,6 +84,11 @@ data$StreetName = as.factor(street)
 See [R Documentation - Pattern Matching and Replacement](https://stat.ethz.ch/R-manual/R-devel/library/base/html/grep.html)  and [R Documentation - Regular Expressions as used in R](https://stat.ethz.ch/R-manual/R-devel/library/base/html/regex.html)  for more info on R and regular expressions.
 
 ## Data Exploration
+
+### Summary Statistics
+
+Using the ```summary()``` function in R, we can get counts of unique values for Factor/Ordinal variables, and summary statistics for numerical variables:
+![Summary statistics and counts for the dataset](images/SfDataAnalysis/DataExplore1.png)
 
 ### Is the data clean? 
 
