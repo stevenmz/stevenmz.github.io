@@ -46,33 +46,33 @@ data$DayOfWeek = ordered(data$DayOfWeek, levels=c('Sunday','Monday','Tuesday','W
 
 ![This image shows the order of the days of the week.](images/SfDataAnalysis/DataPrep3.png)
 
-Is the data clean? 
-Check for mistyping:
+## Data Exploration
 
+### Is the data clean? 
+
+Check for categories that are supposed to be the same, but due to a human mistyping have resulted in multiple categories:
 
 ![Shows the unique values for the Category of crime column](images/SfDataAnalysis/DataPrep4.png)
  
-Looks like no similar categories 
+...Looks like the Category variable has no data entry errors.
 
-We can do the same thing fro description, but to make it easier to spot similar typos we can also sort alphabetically:
+We can do the same thing for the Description variable, but to make it easier to spot similar typos we can also sort alphabetically:
 
 ```R
 sort(unique(data$Descript))
 ```
 
 Visual inspection shows no duplicates (fuzzy near misses when they meant the same thing). Interestingly their system seems to have a broad category like “Assualt” and a number of further more specific descriptions like “ASSAULT BY POISONING”. So if we want to capture all assaults for a given region we would need to grab all instances where description starts with assault.
-Every thing ok with pdDistrict:
 
+Every thing ok with pdDistrict:
 
 ![Shows the unique districts for policing in the city.](images/SfDataAnalysis/DataPrep5.png)
 
 …and with resolution:
 
-
 ![Shows the resolution of the call to 911](images/SfDataAnalysis/DataPrep6.png)
 
-If I want to see crime by street, address feature makes that difficult. What would be better if a StreetName feature. The address entries use one of two formats “xxx block of <street name>” and “<street name> / <other street name>”:
-
+If I want to see crime by street, the Address variable makes that difficult. What would be better is a StreetName feature. The address entries use one of two formats “xxx block of <street name>” and “<street name> / <other street name>” as seen in these two sample observations:
 
 ![Shows the two patterns for addresses in the dataset.](images/SfDataAnalysis/DataPrep7.png)
  
@@ -84,7 +84,6 @@ street = sub("(.+)( / .+)","\\1", street)
 ```
 
 Which gives us our new feature of only street names:
-
 
 ![Shows that we can extract the street name from the addresses.](images/SfDataAnalysis/DataPrep8.png)
  
@@ -102,6 +101,6 @@ Make sure the coordinates do not have missing values:
 2. ```which(is.na(data$Y))``` Result: ```integer(0)```
 
 
-## Modeling and Exploratory Analysis
+## Building a Crime Classification Model
 
 ## Conclusion
