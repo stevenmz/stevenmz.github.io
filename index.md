@@ -5,7 +5,7 @@ title: Main
 <!--
 This section is now redundant with the menu in the sidebar
 
-#Portfolio Contents
+# Portfolio Contents
 1. [Open Source Contributions]({{page.url}}#OpenSource)
 2. [Presentations]({{page.url}}#Presentations)
 3. [Data Science Projects]({{page.url}}#DataScienceProjects)
@@ -13,14 +13,14 @@ This section is now redundant with the menu in the sidebar
 5. [Android Application Projects]({{page.url}}#AndroidAppProjects)
 -->
 
-##<a name="OpenSource"></a> Open Source Contributions
+## <a name="OpenSource"></a> Open Source Contributions
 * Issues Reported
   * [Storm-457: Unable to kill topologies whose name has spaces](https://issues.apache.org/jira/browse/STORM-457) 
   * [Storm-456: Storm UI: cannot navigate to topology page when name contains spaces](https://issues.apache.org/jira/browse/STORM-456)
 * Patches Submitted
   * [PIG-4636: Occurred spelled incorrectly in error message for Launcher and POMergeCogroup](https://issues.apache.org/jira/browse/PIG-4636)
 
-##<a name="Presentations"></a>Presentations
+## <a name="Presentations"></a>Presentations
 
 ### Random Forest Use in Predicting Cancer
 
@@ -29,7 +29,7 @@ This section is now redundant with the menu in the sidebar
 **Overview:** This presentation introduces viewers to what random forests are, how machine learning has played a historic role in the medical field, and how random forests are becoming the preferred solution for classifying samples as cancerous or benign over black-box techniques like neural networks.
  
 
-##<a name="DataScienceProjects"></a>Data Science Projects
+## <a name="DataScienceProjects"></a>Data Science Projects
 
 ### San Francisco Crime Data Analysis
 
@@ -48,7 +48,7 @@ This section is now redundant with the menu in the sidebar
 * ML Algorithms: Random Forests, Logistic Regression, SVM, Naive Bayes for document classification, LDA for topic analysis, Recommendation engine (spark based?), K-means or something more interesting for unsupervised, a streaming online learning algorithm (use spark streaming + KAFKA)
 
 
-##<a name="DesktopAppProjects"></a>Desktop Application Projects
+## <a name="DesktopAppProjects"></a>Desktop Application Projects
 
 ### Contact Book
 
